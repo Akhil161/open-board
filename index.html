@@ -146,7 +146,7 @@
     let boardTop = canvasBoard.getBoundingClientRect().top;
     let boardLeft = canvasBoard.getBoundingClientRect().left;
 
-    body.addEventListener("mousedown",
+    body.addEventListener("touchstart",
         function (e) {
             if (cTool == "penTool") {
                 drawingMode = true;
@@ -160,7 +160,7 @@
                 iY = e.clientY - boardTop;
             }
         })
-    body.addEventListener("mouseup", function (e) {
+    body.addEventListener("touchend", function (e) {
         // netnaniza*,
         if (cTool == "penTool") {
            // console.log(cTool);
